@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pesan Makanan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pesan-container">
+      <h1>Form Pemesanan Makanan</h1>
+      <form id="orderForm">
+        <div class="form-pesan">
+          <label for="foodName">Nama Makanan:</label>
+          <input type="text" id="foodName" name="foodName" required />
+        </div>
+        <div class="form-pesan">
+          <label for="quantity">Jumlah:</label>
+          <input type="number" id="quantity" name="quantity" required />
+        </div>
+        <div class="form-pesan">
+          <label for="address">Alamat Pengiriman:</label>
+          <textarea id="address" name="address" required></textarea>
+        </div>
+        <!-- Bagian form di dalam index.html -->
+        <div class="form-pesan">
+          <label for="paymentMethod">Metode Pembayaran:</label>
+          <select id="paymentMethod" name="paymentMethod" required>
+            <option value="cash">Tunai</option>
+            <option value="cod">COD</option>
+            <option value="card">Kartu Kredit/Debit</option>
+            <option value="ewallet">E-Wallet</option>
+          </select>
+          <a href="index.html">Pesan Sekarang</a>
+        </div>
+      </form>
+      <div id="orderSummary"></div>
+    </div>
+  </body>
+</html>
